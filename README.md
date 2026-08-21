@@ -2487,3 +2487,604 @@ LLD Problems
  ↓
 Production-Grade LLD
 ```
+
+# 🌳 Complete LLD Roadmap
+
+```text
+LOW-LEVEL DESIGN (LLD)
+│
+├── 01. OOP FUNDAMENTALS
+│   │
+│   ├── Class & Object
+│   ├── Encapsulation
+│   ├── Abstraction
+│   ├── Inheritance
+│   ├── Polymorphism
+│   ├── Method Overloading
+│   ├── Method Overriding
+│   ├── Static Binding
+│   ├── Dynamic Binding
+│   ├── Association
+│   ├── Aggregation
+│   ├── Composition
+│   ├── Dependency
+│   ├── Interface
+│   ├── Abstract Class
+│   ├── Composition vs Inheritance
+│   ├── Object Lifecycle
+│   ├── Immutability
+│   ├── Mutable vs Immutable Objects
+│   ├── Access Modifiers
+│   └── Constructors & Destructors
+│
+├── 02. SOLID PRINCIPLES
+│   │
+│   ├── S — Single Responsibility Principle
+│   ├── O — Open/Closed Principle
+│   ├── L — Liskov Substitution Principle
+│   ├── I — Interface Segregation Principle
+│   └── D — Dependency Inversion Principle
+│
+├── 03. GENERAL DESIGN PRINCIPLES
+│   │
+│   ├── DRY
+│   ├── KISS
+│   ├── YAGNI
+│   ├── Separation of Concerns
+│   ├── Composition Over Inheritance
+│   ├── Encapsulate What Varies
+│   ├── Program to an Interface
+│   ├── Principle of Least Knowledge
+│   ├── Law of Demeter
+│   ├── Favor Immutability
+│   ├── Low Coupling
+│   ├── High Cohesion
+│   ├── Principle of Least Privilege
+│   ├── Dependency Injection
+│   └── Inversion of Control
+│
+├── 04. UML & OBJECT MODELING
+│   │
+│   ├── UML Fundamentals
+│   ├── Class Diagram
+│   ├── Object Diagram
+│   ├── Use Case Diagram
+│   ├── Sequence Diagram
+│   ├── Activity Diagram
+│   ├── State Diagram
+│   ├── Component Diagram
+│   ├── Deployment Diagram
+│   ├── Package Diagram
+│   ├── Communication Diagram
+│   ├── Timing Diagram
+│   ├── UML Relationships
+│   ├── Multiplicity
+│   ├── Visibility
+│   ├── Interfaces in UML
+│   └── Abstract Classes in UML
+│
+├── 05. CREATIONAL DESIGN PATTERNS
+│   │
+│   ├── GoF Patterns
+│   │   ├── Singleton
+│   │   ├── Factory Method
+│   │   ├── Abstract Factory
+│   │   ├── Builder
+│   │   └── Prototype
+│   │
+│   └── Related Patterns
+│       ├── Simple Factory
+│       ├── Static Factory Method
+│       ├── Dependency Injection
+│       ├── Object Pool
+│       ├── Lazy Initialization
+│       └── Eager Initialization
+│
+├── 06. STRUCTURAL DESIGN PATTERNS
+│   │
+│   ├── Adapter
+│   ├── Bridge
+│   ├── Composite
+│   ├── Decorator
+│   ├── Facade
+│   ├── Flyweight
+│   ├── Proxy
+│   │
+│   └── Proxy Variations
+│       ├── Virtual Proxy
+│       ├── Protection Proxy
+│       ├── Remote Proxy
+│       ├── Caching Proxy
+│       └── Dynamic Proxy
+│
+├── 07. BEHAVIORAL DESIGN PATTERNS
+│   │
+│   ├── Chain of Responsibility
+│   ├── Command
+│   ├── Interpreter
+│   ├── Iterator
+│   ├── Mediator
+│   ├── Memento
+│   ├── Observer
+│   ├── State
+│   ├── Strategy
+│   ├── Template Method
+│   └── Visitor
+│
+├── 08. ENTERPRISE / APPLICATION PATTERNS
+│   │
+│   ├── Repository
+│   ├── DAO
+│   ├── DTO
+│   ├── Service Layer
+│   ├── Unit of Work
+│   ├── Data Mapper
+│   ├── Active Record
+│   ├── Identity Map
+│   ├── Identity Field
+│   ├── Lazy Load
+│   ├── Registry
+│   ├── Service Locator
+│   ├── Specification
+│   ├── Domain Model
+│   ├── Transaction Script
+│   ├── Table Module
+│   ├── Table Data Gateway
+│   ├── Row Data Gateway
+│   └── Gateway Pattern
+│
+├── 09. ARCHITECTURAL PATTERNS
+│   │
+│   ├── Layered Architecture
+│   ├── Three-Tier Architecture
+│   ├── N-Tier Architecture
+│   ├── MVC
+│   ├── MVP
+│   ├── MVVM
+│   ├── Clean Architecture
+│   ├── Hexagonal Architecture
+│   ├── Ports & Adapters
+│   ├── Onion Architecture
+│   ├── Modular Monolith
+│   ├── Plugin Architecture
+│   ├── Event-Driven Architecture
+│   └── Microkernel Architecture
+│
+├── 10. DEPENDENCY MANAGEMENT
+│   │
+│   ├── Dependency Injection
+│   ├── Constructor Injection
+│   ├── Setter Injection
+│   ├── Interface Injection
+│   ├── Dependency Inversion
+│   ├── Inversion of Control
+│   ├── IoC Container
+│   ├── Dependency Graph
+│   ├── Dependency Lifecycle
+│   ├── Circular Dependency
+│   └── Dependency Scope
+│
+├── 11. DOMAIN-DRIVEN DESIGN (DDD)
+│   │
+│   ├── Domain Modeling
+│   │   ├── Domain
+│   │   ├── Subdomain
+│   │   ├── Core Domain
+│   │   ├── Supporting Subdomain
+│   │   └── Generic Subdomain
+│   │
+│   ├── Building Blocks
+│   │   ├── Entity
+│   │   ├── Value Object
+│   │   ├── Aggregate
+│   │   ├── Aggregate Root
+│   │   ├── Repository
+│   │   ├── Domain Service
+│   │   ├── Application Service
+│   │   └── Domain Event
+│   │
+│   ├── Strategic DDD
+│   │   ├── Bounded Context
+│   │   ├── Context Mapping
+│   │   ├── Ubiquitous Language
+│   │   └── Anti-Corruption Layer
+│   │
+│   └── DDD Patterns
+│       ├── Factory
+│       └── Specification
+│
+├── 12. CONCURRENCY & MULTITHREADING
+│   │
+│   ├── Fundamentals
+│   │   ├── Process vs Thread
+│   │   ├── Concurrency vs Parallelism
+│   │   ├── Race Condition
+│   │   ├── Critical Section
+│   │   ├── Thread Safety
+│   │   └── Synchronization
+│   │
+│   ├── Synchronization
+│   │   ├── Mutex
+│   │   ├── Semaphore
+│   │   ├── Monitor
+│   │   ├── Read-Write Lock
+│   │   ├── Spin Lock
+│   │   └── Atomic Operations
+│   │
+│   ├── Concurrency Problems
+│   │   ├── Deadlock
+│   │   ├── Deadlock Prevention
+│   │   ├── Deadlock Detection
+│   │   ├── Starvation
+│   │   └── Livelock
+│   │
+│   └── Async & Coordination
+│       ├── Thread Pool
+│       ├── Connection Pool
+│       ├── Producer-Consumer
+│       ├── Future
+│       ├── Promise
+│       ├── Barrier
+│       ├── Countdown Latch
+│       ├── Immutable Object
+│       └── Actor Model
+│
+├── 13. CONCURRENCY DESIGN PATTERNS
+│   │
+│   ├── Thread Pool
+│   ├── Producer-Consumer
+│   ├── Object Pool
+│   ├── Active Object
+│   ├── Monitor Object
+│   ├── Reactor
+│   ├── Proactor
+│   ├── Half-Sync/Half-Async
+│   ├── Leader-Followers
+│   └── Double-Checked Locking
+│
+├── 14. DISTRIBUTED SYSTEM DESIGN PATTERNS
+│   │
+│   ├── Reliability
+│   │   ├── Retry
+│   │   ├── Timeout
+│   │   ├── Exponential Backoff
+│   │   ├── Jitter
+│   │   ├── Circuit Breaker
+│   │   ├── Bulkhead
+│   │   ├── Fallback
+│   │   ├── Failover
+│   │   ├── Graceful Degradation
+│   │   └── Load Shedding
+│   │
+│   ├── Coordination
+│   │   ├── Distributed Lock
+│   │   ├── Leader Election
+│   │   ├── Health Check
+│   │   └── Heartbeat
+│   │
+│   └── Data & Transactions
+│       ├── Idempotency
+│       ├── Saga
+│       ├── Compensation Transaction
+│       ├── Outbox Pattern
+│       ├── Inbox Pattern
+│       ├── CQRS
+│       ├── Event Sourcing
+│       ├── Eventual Consistency
+│       ├── Quorum
+│       ├── Two-Phase Commit
+│       ├── Three-Phase Commit
+│       └── Consistent Hashing
+│
+├── 15. MESSAGING & EVENT PATTERNS
+│   │
+│   ├── Message Queue
+│   ├── Publish-Subscribe
+│   ├── Point-to-Point Messaging
+│   ├── Event Notification
+│   ├── Event-Carried State Transfer
+│   ├── Event Streaming
+│   ├── Dead Letter Queue
+│   ├── Retry Queue
+│   ├── Priority Queue
+│   ├── Message Deduplication
+│   ├── Message Ordering
+│   ├── Consumer Group
+│   ├── Competing Consumers
+│   ├── Message Router
+│   ├── Message Filter
+│   ├── Content-Based Router
+│   ├── Message Aggregator
+│   ├── Message Splitter
+│   └── Claim Check Pattern
+│
+├── 16. API & SERVICE DESIGN
+│   │
+│   ├── API Fundamentals
+│   │   ├── REST API Design
+│   │   ├── Resource-Oriented Design
+│   │   ├── API Versioning
+│   │   ├── Pagination
+│   │   ├── Filtering
+│   │   ├── Sorting
+│   │   ├── Searching
+│   │   ├── Request/Response Pattern
+│   │   ├── Request Validation
+│   │   └── Error Handling
+│   │
+│   ├── API Security
+│   │   ├── Authentication
+│   │   ├── Authorization
+│   │   ├── API Idempotency
+│   │   └── API Rate Limiting
+│   │
+│   └── Communication
+│       ├── API Gateway
+│       ├── Backend for Frontend
+│       ├── GraphQL
+│       ├── gRPC
+│       ├── WebSockets
+│       ├── Server-Sent Events
+│       └── Long Polling
+│
+├── 17. DATABASE DESIGN
+│   │
+│   ├── Modeling
+│   │   ├── Entity Modeling
+│   │   ├── Relational Modeling
+│   │   ├── Normalization
+│   │   └── Denormalization
+│   │
+│   ├── Keys & Constraints
+│   │   ├── Primary Key
+│   │   ├── Foreign Key
+│   │   ├── Composite Key
+│   │   ├── Unique Constraint
+│   │   └── Database Constraints
+│   │
+│   ├── Performance
+│   │   ├── Indexing
+│   │   ├── Composite Index
+│   │   └── Connection Pool
+│   │
+│   └── Transactions
+│       ├── Transactions
+│       ├── ACID
+│       ├── Isolation Levels
+│       ├── Optimistic Locking
+│       ├── Pessimistic Locking
+│       ├── Database Migration
+│       └── Database Repository
+│
+├── 18. CACHING
+│   │
+│   ├── Cache Strategies
+│   │   ├── Cache-Aside
+│   │   ├── Read-Through
+│   │   ├── Write-Through
+│   │   ├── Write-Behind
+│   │   └── Write-Around
+│   │
+│   ├── Cache Management
+│   │   ├── Cache Invalidation
+│   │   ├── TTL
+│   │   ├── LRU
+│   │   ├── LFU
+│   │   └── FIFO
+│   │
+│   └── Cache Problems
+│       ├── Cache Stampede
+│       ├── Cache Penetration
+│       ├── Cache Avalanche
+│       ├── Hot Key Problem
+│       └── Distributed Cache
+│
+├── 19. RESILIENCE
+│   │
+│   ├── Retry
+│   ├── Timeout
+│   ├── Circuit Breaker
+│   ├── Bulkhead
+│   ├── Rate Limiter
+│   ├── Fallback
+│   ├── Graceful Degradation
+│   ├── Fail Fast
+│   ├── Load Shedding
+│   ├── Backpressure
+│   ├── Health Checks
+│   ├── Failover
+│   └── Disaster Recovery
+│
+├── 20. SECURITY
+│   │
+│   ├── Authentication
+│   ├── Authorization
+│   ├── RBAC
+│   ├── ABAC
+│   ├── OAuth
+│   ├── JWT
+│   ├── Session Management
+│   ├── Password Hashing
+│   ├── Encryption
+│   ├── TLS
+│   ├── Secrets Management
+│   ├── Input Validation
+│   ├── SQL Injection Prevention
+│   ├── XSS Prevention
+│   ├── CSRF Prevention
+│   ├── SSRF Prevention
+│   ├── Secure API Design
+│   ├── Audit Logging
+│   └── Principle of Least Privilege
+│
+├── 21. TESTING & QUALITY
+│   │
+│   ├── Testing
+│   │   ├── Unit Testing
+│   │   ├── Integration Testing
+│   │   ├── Contract Testing
+│   │   ├── End-to-End Testing
+│   │   └── Regression Testing
+│   │
+│   ├── Test Doubles
+│   │   ├── Mock
+│   │   ├── Stub
+│   │   ├── Fake
+│   │   └── Spy
+│   │
+│   └── Testing Practices
+│       ├── Testability
+│       ├── Dependency Mocking
+│       ├── TDD
+│       ├── BDD
+│       └── Code Coverage
+│
+├── 22. CODE QUALITY
+│   │
+│   ├── Clean Code
+│   ├── Naming
+│   ├── Small Functions
+│   ├── Small Classes
+│   ├── Code Duplication
+│   ├── Cyclomatic Complexity
+│   ├── Coupling
+│   ├── Cohesion
+│   ├── Refactoring
+│   ├── Technical Debt
+│   │
+│   └── Code Smells
+│       ├── God Class
+│       ├── God Method
+│       ├── Long Method
+│       ├── Large Class
+│       ├── Feature Envy
+│       ├── Shotgun Surgery
+│       ├── Primitive Obsession
+│       └── Circular Dependency
+│
+└── 23. REAL-WORLD LLD PROBLEMS
+    │
+    ├── 🟢 BEGINNER
+    │   ├── Tic-Tac-Toe
+    │   ├── Snake & Ladder
+    │   ├── Parking Lot
+    │   ├── Library Management
+    │   ├── Vending Machine
+    │   ├── ATM
+    │   ├── Car Rental
+    │   └── Movie Ticket Booking
+    │
+    ├── 🟡 INTERMEDIATE
+    │   ├── Elevator System
+    │   ├── Splitwise
+    │   ├── Chess
+    │   ├── Hotel Booking
+    │   ├── Cab Booking
+    │   ├── Food Delivery
+    │   ├── Notification System
+    │   ├── Logging Framework
+    │   ├── File System
+    │   ├── Cache
+    │   ├── Rate Limiter
+    │   └── Meeting Scheduler
+    │
+    └── 🔴 ADVANCED
+        ├── Payment Gateway
+        ├── Inventory Management
+        ├── Stock Exchange
+        ├── Ride Sharing
+        ├── Workflow Engine
+        ├── Distributed Job Scheduler
+        ├── E-Commerce Order System
+        ├── Ticket Reservation System
+        ├── Real-Time Notification System
+        ├── Rule Engine
+        ├── Search System
+        ├── Auction System
+        ├── Coupon System
+        ├── Subscription System
+        ├── Digital Wallet
+        └── Banking System
+
+```
+LLD LEARNING FLOW
+```
+                         ┌─────────────────────┐
+                         │   LOW LEVEL DESIGN  │
+                         └──────────┬──────────┘
+                                    │
+                    ┌───────────────▼───────────────┐
+                    │       OOP FUNDAMENTALS        │
+                    └───────────────┬───────────────┘
+                                    │
+                    ┌───────────────▼───────────────┐
+                    │        SOLID PRINCIPLES       │
+                    └───────────────┬───────────────┘
+                                    │
+                    ┌───────────────▼───────────────┐
+                    │      DESIGN PRINCIPLES        │
+                    └───────────────┬───────────────┘
+                                    │
+                    ┌───────────────▼───────────────┐
+                    │          UML MODELING          │
+                    └───────────────┬───────────────┘
+                                    │
+                ┌───────────────────┼───────────────────┐
+                ▼                   ▼                   ▼
+        ┌─────────────┐     ┌─────────────┐     ┌─────────────┐
+        │ CREATIONAL  │     │ STRUCTURAL  │     │ BEHAVIORAL  │
+        │  PATTERNS   │     │  PATTERNS   │     │  PATTERNS   │
+        └──────┬──────┘     └──────┬──────┘     └──────┬──────┘
+               └───────────────────┼───────────────────┘
+                                   ▼
+                         ┌─────────────────────┐
+                         │ ENTERPRISE PATTERNS │
+                         └──────────┬──────────┘
+                                    │
+                         ┌──────────▼──────────┐
+                         │    ARCHITECTURE     │
+                         │       PATTERNS      │
+                         └──────────┬──────────┘
+                                    │
+                   ┌────────────────┼────────────────┐
+                   ▼                ▼                ▼
+             ┌───────────┐   ┌───────────┐   ┌───────────┐
+             │CONCURRENCY│   │    DDD    │   │API DESIGN │
+             └─────┬─────┘   └─────┬─────┘   └─────┬─────┘
+                   │               │               │
+                   └───────────────┼───────────────┘
+                                   ▼
+                         ┌─────────────────────┐
+                         │ DISTRIBUTED SYSTEMS │
+                         └──────────┬──────────┘
+                                    │
+              ┌─────────────────────┼─────────────────────┐
+              ▼                     ▼                     ▼
+        ┌───────────┐         ┌───────────┐         ┌───────────┐
+        │ MESSAGING │         │  CACHING  │         │ RESILIENCE│
+        └─────┬─────┘         └─────┬─────┘         └─────┬─────┘
+              └─────────────────────┼─────────────────────┘
+                                    ▼
+                         ┌─────────────────────┐
+                         │ DATABASE DESIGN     │
+                         └──────────┬──────────┘
+                                    │
+                         ┌──────────▼──────────┐
+                         │      SECURITY       │
+                         └──────────┬──────────┘
+                                    │
+                         ┌──────────▼──────────┐
+                         │ TESTING & QUALITY   │
+                         └──────────┬──────────┘
+                                    │
+                         ┌──────────▼──────────┐
+                         │ REAL-WORLD LLD      │
+                         │     PROBLEMS        │
+                         └──────────┬──────────┘
+                                    │
+                                    ▼
+                         ┌─────────────────────┐
+                         │ PRODUCTION-GRADE LLD│
+                         └─────────────────────┘
+```
+
