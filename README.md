@@ -3,6 +3,7 @@
 > A complete Low-Level Design roadmap covering **OOP, SOLID, Design Principles, UML, Design Patterns, Enterprise Patterns, Concurrency Patterns, Distributed System Patterns, and real-world LLD problems**.
 
 ---
+<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/edf19960-1582-4394-a601-fa9b91bbd686" />
 
 # 📚 Table of Contents
 
